@@ -1,23 +1,18 @@
 # Fitxa 1 — Anàlisi inicial de MusicCloud
 
-**Nom i cognoms:** Marco Rosado Vasquez __________________________________________  
-**Data:** __________________  
-**Equip / parella:** _________________________________________
+**Nom i cognoms:** Marco Rosado Vasquez
+**Data:** 22/09/2026
+**Equip / parella:** Individual
 
 ## Objectiu
 
 MusicCloud necessita reorganitzar la seva infraestructura informàtica. Abans d'instal·lar o configurar cap servei, cal entendre:
 
 - qui treballa a l'empresa;
-    
 - quines funcions té cada persona;
-    
 - quins recursos existeixen;
-    
 - qui necessita accedir a cada recurs;
-    
 - com podem gestionar aquests accessos de manera eficient.
-    
 
 ---
 
@@ -28,38 +23,38 @@ Consulta la informació disponible sobre els departaments, treballadors i perfil
 Completa la taula següent.
 
 |Persona|Departament|Funció / responsabilitat|Necessita privilegis especials? Per què?|
-|---|---|---|---|
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
+|Aina Ciurans|Direcció|Dirigir|Si|Per veure tot el que pasa a l'empresa|
+|Rut Tornil|Direcció|Dirigir|Acces basic al seu departament|
+|Dídac Gassó|Administració|No|Acces basic al seu departament|
+|Laia Macias|Administració|Cap|Sí|Per veure tot el que pasa al seu departament|
+|Estel Birosta|Suport tècnic|No|Acces basic al seu departament|
+|Aina Zuriguel|Suport tècnic|No|Acces basic al seu departament|
+|Lluïsa Richart|Suport tècnic|Cap|Sí|Per veure tot el que pasa al seu departament|
+|Roser Alberch|Producció musical|No|Acces basic al seu departament|
+|Guillem Adella|Producció musical|No|Acces basic al seu departament|
+|Meritxell Reglat|Producció musical|Cap|Sí|Per veure tot el que pasa al seu departament|
+|Alícia Monclús|Producció musical|No|Acces basic al seu departament|
+|Carles Molins|Producció musical|No|Acces basic al seu departament|
+|Eulàlia Glacera|Producció musical|No|Acces basic al seu departament|
+|Talia Costas|Informàtica|Cap|Sí|Per veure tot el que pasa al seu departament|
+|Alex Soriano|Informàtica|No|Acces basic al seu departament|
 
 ### 1.1. Reflexió
 
 Quines diferències observes entre un **treballador**, un **departament** i una **funció o responsabilitat**?
 
----
-
----
-
----
+Observo que els treballadros de cada departament tenen neccesitats diferents y aquestes es defineixen en si el treballador es d'un departament o d'un altre i en la funcio que te en aquest mateix.
 
 Hi ha persones que, pel seu càrrec o funció, necessiten accessos diferents dels altres membres del seu departament?
 
-☐ Sí  
+**X Sí **
 ☐ No
 
 Posa'n algun exemple:
 
----
+Els caps de departament necessiten poder consultar tot el que pasa en el seu departament els treballadors sense carrec especial no ho neccessiten.
 
----
-
----
+Direccio ha de poder veure tot el que pasa a l'empresa aixo doncs tenen acces a tots el departaments.
 
 # 2. Recursos de l'empresa
 
@@ -67,14 +62,14 @@ Analitza l'estructura d'informació de MusicCloud.
 
 Classifica alguns dels recursos següents segons la seva finalitat.
 
-|Recurs|Qui creus que l'hauria d'utilitzar?|Per a què?|
-|---|---|---|
-|`/empresa/comu/intercanvi`|||
-|`/empresa/comu/comunicats`|||
-|`/empresa/departaments/administracio/compartida`|||
-|`/empresa/departaments/administracio/gestio_departament`|||
-|`/empresa/projectes/campanya_estiu`|||
-|`/empresa/administracio_sistema/backups`|||
+| Recurs                                                   | Qui creus que l'hauria d'utilitzar?                | Per a què?                                         |
+| -------------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------- |
+| `/empresa/comu/intercanvi`                               | Tots els treballadors                              | Per intercambiar documents amb altres departaments |
+| `/empresa/comu/comunicats`                               | Direcció i els caps de departament                 | Per informar per fer comunicats                    |
+| `/empresa/departaments/administracio/compartida`         | Els treballadors de el departament d'administració | Per inter                                          |
+| `/empresa/departaments/administracio/gestio_departament` |                                                    |                                                    |
+| `/empresa/projectes/campanya_estiu`                      |                                                    |                                                    |
+| `/empresa/administracio_sistema/backups`                 |                                                    |                                                    |
 
 ---
 
@@ -85,24 +80,20 @@ Per a cada situació, indica quin nivell d'accés consideres adequat.
 Utilitza:
 
 - **NA** → sense accés
-    
 - **L** → lectura
-    
 - **L/E** → lectura i escriptura
-    
 - **ADM** → administració
-    
 
 No busquis encara una solució tècnica. Pensa només en les necessitats de l'empresa.
 
-|Situació|Accés proposat|Justificació|
-|---|---|---|
-|Dídac accedeix a la carpeta compartida d'Administració|||
-|Laia accedeix a la gestió del departament d'Administració|||
-|Pere, treballador extern, accedeix als comunicats interns|||
-|Talia accedeix als backups del sistema|||
-|Un membre de Producció musical accedeix a la carpeta d'Administració|||
-|Un participant de `campanya_estiu` accedeix als fitxers del projecte|||
+| Situació                                                             | Accés proposat | Justificació |
+| -------------------------------------------------------------------- | -------------- | ------------ |
+| Dídac accedeix a la carpeta compartida d'Administració               |                |              |
+| Laia accedeix a la gestió del departament d'Administració            |                |              |
+| Pere, treballador extern, accedeix als comunicats interns            |                |              |
+| Talia accedeix als backups del sistema                               |                |              |
+| Un membre de Producció musical accedeix a la carpeta d'Administració |                |              |
+| Un participant de `campanya_estiu` accedeix als fitxers del projecte |                |              |
 
 ---
 
@@ -111,13 +102,9 @@ No busquis encara una solució tècnica. Pensa només en les necessitats de l'em
 Imagina que MusicCloud té només quatre treballadors:
 
 - Anna
-    
 - Biel
-    
 - Carla
-    
 - David
-    
 
 Tots quatre treballen al mateix departament i necessiten accedir a la mateixa carpeta.
 
@@ -259,13 +246,13 @@ A partir de l'organització de l'empresa, proposa els primers conjunts de person
 
 **No cal trobar encara la solució definitiva.**
 
-|Nom proposat|Qui hi pertanyeria?|Per què existeix aquest conjunt?|
-|---|---|---|
-||||
-||||
-||||
-||||
-||||
+| Nom proposat | Qui hi pertanyeria? | Per què existeix aquest conjunt? |
+| ------------ | ------------------- | -------------------------------- |
+|              |                     |                                  |
+|              |                     |                                  |
+|              |                     |                                  |
+|              |                     |                                  |
+|              |                     |                                  |
 
 ---
 
